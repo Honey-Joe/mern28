@@ -9,15 +9,15 @@ console.log(fetch('https://dummyjson.com/users'))
 // then catch method 
 // async await method
 // let name = document.getElementById("name")
-// fetch('https://dummyjson.com/users').then((res)=>{
-//     console.log(res)
-//     return res.json()
-// }).then((data)=>{
-//     console.log(data.users[0].firstName)
-//     // name.innerText = data.users[1].firstName
-// }).catch((err)=>{
-//     console.log("Error in fetching data" , err)
-// })
+fetch('https://dummyjson.com/users').then((res)=>{
+    console.log(res)
+    return res.json()
+}).then((data)=>{
+    console.log(data.users[0].firstName)
+    // name.innerText = data.users[1].firstName
+}).catch((err)=>{
+    console.log("Error in fetching data" , err)
+})
 
 
 const fetchData = async()=>{
